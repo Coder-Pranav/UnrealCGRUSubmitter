@@ -1,6 +1,9 @@
 import sys
 
-from PySide2.QtWidgets import *
+try:
+    from PySide2.QtWidgets import *
+except:
+    from PySide.QtGui import *
 
 
 class Panel(QWidget):
@@ -52,7 +55,9 @@ class Panel(QWidget):
         self.filepath.setText(path)
 
 
-app = QApplication(sys.argv)
+# def unreal_sub():
+#     print 'hey'
+app = QApplication([])
 panel = Panel()
 panel.show()
-app.exec_()
+sys.exit(app.exec_())

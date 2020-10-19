@@ -1,5 +1,5 @@
 import sys
-sys.path.append(r"C:\Users\prnvp\PycharmProjects\unrealsubmitter")
+sys.path.append(r"C:\xxx\xxx\xxxx\unrealsubmitter")
 
 import unreal
 from submitter import *
